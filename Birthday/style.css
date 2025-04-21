@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    padding: 50px;
+    color: #333;
+  }
+  
+  .card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    display: inline-block;
+    max-width: 600px;
+  }
+  
+  h1 {
+    color: #ff6f61;
+    font-size: 3em;
+    margin: 0.5em 0;
+  }
+  
+  p {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .cake {
+    font-size: 4em;
+    margin: 20px 0;
+  }
+  
+  .confetti {
+    font-size: 2em;
+  }
+  
+  .section {
+    margin-top: 30px;
+  }
+  
+  .section h2 {
+    font-size: 1.3em;
+    color: #ff6f61;
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  select {
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  

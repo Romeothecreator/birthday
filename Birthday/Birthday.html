@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday to the best Dad!</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function goToCakePage(select) {
+      const url = select.value;
+      if (url) {
+        window.location.href = url;
+      }
+    }
+  </script>
+
+<script>
+  function changeWish() {
+    const radios = document.getElementsByName("wish");
+    let message = "";
+
+    for (let i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        switch (radios[i].value) {
+          case "sweet":
+            message = "We're wishing you all the joy, laughter, and happiness you can handle!";
+            break;
+          case "funny":
+            message = "Happy Birthday Dad. You're not getting older, you're just leveling up and becoming a classic. Congratulations on being even more experienced! 🎮🎂";
+            break;
+          case "classic":
+            message = "Warmest wishes on your special day. May it be filled with Love and Joy.";
+            break;
+        }
+      }
+    }
+
+    document.getElementById("birthday-message").textContent = message;
+  }
+</script>
+
+</head>
+<body>
+  <div class="card">
+    <div class="confetti">🎉🎉🎉</div>
+    <h1>Happy Birthday to the best Dad!</h1>
+    <div class="cake">🎂</div>
+    <p>We wish you a Happy Birthday Dad. Thankyou for always being there for us 
+      and our biggest supporter. We LOVE you and wish you the best. Cheers to many more Birthdays!!!
+    </p>
+
+
+    <div class="section">
+      <h2>Choose your wish style:</h2>
+      <label><input type="radio" name="wish" value="sweet" checked onchange="changeWish()"> Short & Sweet</label><br>
+      <label><input type="radio" name="wish" value="funny" onchange="changeWish()"> Funny & Comical</label><br>
+      <label><input type="radio" name="wish" value="classic" onchange="changeWish()"> Classic & Genuine</label>
+    </div>
+    
+    <p id="birthday-message">Wishing you all the joy, laughter, and happiness you can handle!</p>
+    
+
+    <!-- Dropdown (Select with redirect) -->
+    <div class="section">
+      <h2>Here are wishes from all of us:</h2>
+      <select onchange="goToCakePage(this)">
+        <option value="">-- Choose a flavor --</option>
+        <option value="Mum.html">Chocolate 🍫</option>
+        <option value="Romeo.html">Vanilla 🍰</option>
+        <option value="Hope.html">Red Velvet ❤️</option>
+        <option value="Fauzia.html">Strawberry 🍓</option>
+      </select>
+    </div>
+
+    <p>May you have a Blissful birthday! 💖</p>
+    <div class="confetti">🎉🎉🎉</div>
+  </div>
+</body>
+</html>
